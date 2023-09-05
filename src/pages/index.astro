@@ -1,15 +1,35 @@
 ---
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Divulgando Ciencia | La ciencia abierta</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-principal-white">
+		<section class="bg-principal-black h-screen w-full text-center relative overflow-hidden text-principal-white flex">
+			<section class="m-auto w-full place-content-center px-8">
+				<!--Texto (título y subtítulo)-->
+				<header class="z-30 relative">
+					<h1 class="text-3xl sm:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl min-[2250px]:text-[10rem] font-semibold mb-8">
+						divulgandociencia.com
+					</h1>
+					<h3 class="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl min-[2250px]:text-4xl mb-16 font-normal px-32">
+						Estamos actualizando nuestra web de divulgación científica abierta que estará disponible pronto. En este momento, no se puede acceder, ya que estamos finalizando el desarrollo. Prepárense para explorar el mundo de la ciencia con nosotros.
+					</h3>
+					<h2 class="text-2xl sm:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl min-[2250px]:text-[9.5rem] font-medium mb-8">
+						¡Gracias por su paciencia!
+					</h2>
+				</header>
+			</section>
+	
+			<!--Imagen de fondo-->
+			<div class="absolute top-0 bottom-0 z-10 blur opacity-30 bg-center h-full w-full">
+				<img class="h-full object-cover w-full" alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
+			</div>
+		</section>
 	</body>
 </html>
