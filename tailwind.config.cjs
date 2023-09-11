@@ -9,6 +9,10 @@ module.exports = {
 	darkMode: ["class"],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		fontFamily: {
+			'generalsans': ['General Sans Regular', 'sans-serif'],
+			'generalsans-semibold': ['General Sans Semibold', 'sans-serif'],
+		},
 		colors: {
 			'principal-white': '#F5F5F5',
 			'principal-black': '#222222',
