@@ -19,6 +19,7 @@
 					<!-- Display the countdown timer in an element -->
 					<div>
 						<span class="mr-4 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="time">
+							<span class="hidden" id="popupSpan">26/9/23 21:00:00</span>
 						</span>
 					</div>
 
@@ -58,6 +59,19 @@
 						clearInterval(x);
 					}
 					}, 1000);
+					</script>
+					<script>
+  						document.addEventListener("DOMContentLoaded", function() {
+   						var timeElement = document.getElementById("time");
+    						timeElement.addEventListener("mouseover", function() {
+							var popupSpan = timeElement.querySelector("#popupSpan");
+     							popupSpan.style.display = "inline";
+    						});
+   						timeElement.addEventListener("mouseout", function() {
+      							var popupSpan = timeElement.querySelector("#popupSpan");
+      							popupSpan.style.display = "none";
+						});
+  					});
 					</script>
 				</header>
 			</section>
