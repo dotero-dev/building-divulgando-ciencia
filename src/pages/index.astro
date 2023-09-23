@@ -20,12 +20,6 @@
 					<div>
 						<span class="mr-4 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="days">
 						</span>
-						<span class="mr-4 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="hours">
-						</span>
-						<span class="mr-4 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="min">
-						</span>
-						<span class="w-10 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="sec">
-						</span>
 					</div>
 
 					<script>
@@ -47,10 +41,17 @@
 					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					document.getElementById("days").innerHTML = days + " días"
-					document.getElementById("hours").innerHTML = hours + " horas"
-					document.getElementById("min").innerHTML = minutes + " minutos"
-					document.getElementById("sec").innerHTML = seconds + " segundos"
+					document.getElementById("time").innerHTML = days + " días \n" + hours + " horas \n" + minutes + " minutos \n" + seconds + " segundos \n"
+					// document.getElementById("hours").innerHTML = hours + " horas"
+					// document.getElementById("min").innerHTML = minutes + " minutos"
+					// document.getElementById("sec").innerHTML = seconds + " segundos"
+
+					// <span class="mr-4 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="hours">
+					// </span>
+					// <span class="mr-4 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="min">
+					// </span>
+					// <span class="w-10 px-3 py-4 bg-faded-white font-generalsans-semibold rounded text-xl" id="sec">
+					// </span>
 
 					// If the count down is finished, write some text
 					if (distance < 0) {
